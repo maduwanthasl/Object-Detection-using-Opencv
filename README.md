@@ -42,6 +42,84 @@ By leveraging OpenCV's robust computer vision algorithms, this project can detec
     pip install -r requirements.txt
     ```
 
+    
+## Code
+
+### Single Object Tracking
+
+Below is the Python code for single object tracking using OpenCV. This code demonstrates how to initialize a tracker, select a region of interest (ROI) for tracking, and update the tracker with each frame of the video.
+
+```python
+import cv2
+
+# Dictionary of available trackers
+TrDict = {
+    'csrt': cv2.TrackerCSRT_create,
+    'kcf': cv2.TrackerKCF_create,
+    'mil': cv2.TrackerMIL_create,
+}
+
+# Initialize tracker
+tracker = TrDict['mil']()
+
+# Open the video file
+video = cv2.VideoCapture("/home/shevi/Downloads/object_tracker.mp4")
+
+# Read the first frame
+ret, frame = video.read()
+
+# Check if the video file is opened successfully
+if not ret:
+    print("Error: Failed to open video file")
+    exit()
+
+# Select a bounding box for tracking
+bbox = cv2.selectROI('Frame', frame, fromCenter=False, showCrosshair=True)
+
+# Initialize the tracker with the bounding box and the first frame
+tracker.init(frame, bbox)
+
+# Define the codec and create VideoWriter object
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+out = cv2.VideoWriter('tracked_output.avi', fourcc, 20.0, (frame.shape[1], frame.shape[0]))
+
+# Loop through the video frames
+while True:
+    # Read a new frame
+    ret, frame = video.read()
+    if not ret:
+        break
+
+    # Update the tracker
+    ret, bbox = tracker.update(frame)
+
+    # Draw bounding box
+    if ret:
+        # Tracking success
+        p1 = (int(bbox[0]), int(bbox[1]))
+        p2 = (int(bbox[0] + bbox[2]), int(bbox[1] + bbox[3]))
+        cv2.rectangle(frame, p1, p2, (255, 0, 0), 2, 1)
+    else:
+        # Tracking failure
+        cv2.putText(frame, "Tracking failure detected", (100, 80), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 255), 2)
+
+    # Write the frame to the output video
+    out.write(frame)
+
+    # Display frame
+    cv2.imshow('Frame', frame)
+
+    # Exit if ESC pressed
+    k = cv2.waitKey(1) & 0xff
+    if k == 27:
+        break
+
+# Release the video capture, release the video writer, and close any open windows
+video.release()
+out.release()
+cv2.destroyAllWindows()
+```
+
 ## Results
 
 Here are some sample results from the project:
