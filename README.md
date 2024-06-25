@@ -136,4 +136,3 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 - [OpenCV](https://opencv.org/) - Open Source Computer Vision Library.
 - [YOLO](https://pjreddie.com/darknet/yolo/) - You Only Look Once: Unified, Real-Time Object Detection.
-- [Contributors](https://github.com/yourusername/your-repo-name/graphs/contributors) who helped to improve this project.
