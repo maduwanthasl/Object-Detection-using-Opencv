@@ -8,8 +8,6 @@ This repository contains code for object detection and tracking using OpenCV. Th
 - [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
@@ -29,8 +27,8 @@ By leveraging OpenCV's robust computer vision algorithms, this project can detec
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/maduwanthasl/Object-Detection-using-Opencv.git
+    cd Object-Detection-using-Opencv
     ```
 
 2. Create and activate a virtual environment (optional but recommended):
