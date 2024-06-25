@@ -42,21 +42,6 @@ By leveraging OpenCV's robust computer vision algorithms, this project can detec
     pip install -r requirements.txt
     ```
 
-## Usage
-
-1. To run the object detection and tracking script, execute the following command:
-    ```sh
-    python main.py
-    ```
-
-2. You can modify the parameters in the `config.py` file to change the detection and tracking behavior:
-    ```python
-    # config.py
-    DETECTION_MODEL = 'yolov3'
-    TRACKING_ALGORITHM = 'KCF'
-    CONFIDENCE_THRESHOLD = 0.5
-    ```
-
 ## Results
 
 Here are some sample results from the project:
