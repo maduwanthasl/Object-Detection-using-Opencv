@@ -124,7 +124,7 @@ cv2.destroyAllWindows()
 
 Here are some sample results from the project:
 
-![Sample Result 1](images/result1.png)
+[Single object tracking](https://github.com/maduwanthasl/Object-Detection-using-Opencv/blob/main/Outputs/tracked_output.avi)
 ![Sample Result 2](images/result2.png)
 
 ## Contributing
