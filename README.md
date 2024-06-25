@@ -1,9 +1,6 @@
 # Object Detection and Tracking using OpenCV
 
-## Introduction
-
-This project demonstrates object detection and tracking using OpenCV. The implementation includes both single object tracking and multiple object tracking from a given video. Additionally, the project supports real-time tracking using a webcam.
-By leveraging OpenCV's robust computer vision algorithms, this project can detect and track objects, visualizing their movement across frames. This can be useful for a variety of applications, including surveillance, activity recognition, and more.
+This repository contains code for object detection and tracking using OpenCV. The project aims to detect objects in real-time from a video feed and track them as they move across the frame.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -17,7 +14,9 @@ By leveraging OpenCV's robust computer vision algorithms, this project can detec
 
 ## Introduction
 
-Object detection and tracking is a computer vision technique used to detect instances of objects in images or videos and monitor their movements over time. This project leverages the power of OpenCV, a popular open-source computer vision library, to achieve this task.
+This project demonstrates object detection and tracking using OpenCV. The implementation includes both single object tracking and multiple object tracking from a given video. Additionally, the project supports real-time tracking using a webcam.
+
+By leveraging OpenCV's robust computer vision algorithms, this project can detect and track objects, visualizing their movement across frames. This can be useful for a variety of applications, including surveillance, activity recognition, and more.
 
 ## Features
 
@@ -80,4 +79,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [OpenCV](https://opencv.org/) - Open Source Computer Vision Library.
 - [YOLO](https://pjreddie.com/darknet/yolo/) - You Only Look Once: Unified, Real-Time Object Detection.
 - [Contributors](https://github.com/yourusername/your-repo-name/graphs/contributors) who helped to improve this project.
-
