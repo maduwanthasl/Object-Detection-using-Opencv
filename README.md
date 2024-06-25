@@ -1,29 +1,30 @@
-# Object Detection and Tracking using OpenCV
+# 📦 Object Detection and Tracking using OpenCV
 
 This repository contains code for object detection and tracking using OpenCV. The project aims to detect objects in real-time from a video feed and track them as they move across the frame.
 
-## Table of Contents
+## 📋 Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#installation)
 - [Code](#code)
 - [Results](#results)
+- [Contributing](#contributing)
 - [Acknowledgements](#acknowledgements)
 
-## Introduction
+## 📖 Introduction
 
 This project demonstrates object detection and tracking using OpenCV. The implementation includes both single object tracking and multiple object tracking from a given video. Additionally, the project supports real-time tracking using a webcam.
 
 By leveraging OpenCV's robust computer vision algorithms, this project can detect and track objects, visualizing their movement across frames. This can be useful for a variety of applications, including surveillance, activity recognition, and more.
 
-## Features
+## ✨ Features
 
-- Real-time object detection using pre-trained models.
-- Object tracking using various algorithms (e.g., KCF, CSRT, MIL, etc.).
-- Visualization of bounding boxes and tracking paths.
-- Adjustable parameters for detection and tracking to fine-tune performance.
+- 🎥 Real-time object detection using pre-trained models.
+- 📌 Object tracking using various algorithms (e.g., KCF, CSRT, MIL, etc.).
+- 🖼️ Visualization of bounding boxes and tracking paths.
+- ⚙️ Adjustable parameters for detection and tracking to fine-tune performance.
 
-## Installation
+## 💻 Installation
 
 1. Clone the repository:
     ```sh
@@ -42,10 +43,9 @@ By leveraging OpenCV's robust computer vision algorithms, this project can detec
     pip install -r requirements.txt
     ```
 
-    
-## Code
+## 📝 Code
 
-### Single Object Tracking
+### 🕵️‍♂️ Single Object Tracking
 
 Below is the Python code for single object tracking using OpenCV. This code demonstrates how to initialize a tracker, select a region of interest (ROI) for tracking, and update the tracker with each frame of the video.
 
@@ -120,19 +120,13 @@ out.release()
 cv2.destroyAllWindows()
 ```
 
-## Results
+## 📊 Results
 
 Here are some sample results from the project:
 
 [Single object tracking](https://github.com/maduwanthasl/Object-Detection-using-Opencv/assets/107339150/b070c5cc-45a3-44fa-a144-16b123cdc8e9)
 
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
-
-
-## Acknowledgements
+## 🙏 Acknowledgements
 
 - [OpenCV](https://opencv.org/) - Open Source Computer Vision Library.
 - [YOLO](https://pjreddie.com/darknet/yolo/) - You Only Look Once: Unified, Real-Time Object Detection.
